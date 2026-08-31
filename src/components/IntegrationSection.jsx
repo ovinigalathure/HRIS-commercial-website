@@ -1,0 +1,13 @@
+import { integrationDetails, integrationFlow } from '../data/content';
+import Icon from './Icon';
+import Reveal from './Reveal';
+import useTilt from '../hooks/useTilt';
+
+function DetailCard({ item, index }) {
+  const tilt = useTilt();
+  return <Reveal delay={index * 80} variant={index % 2 ? 'right' : 'left'}><article ref={tilt.ref} style={tilt.style} onMouseMove={tilt.onMouseMove} onMouseLeave={tilt.onMouseLeave} className="group spotlight-card glass-card flex h-full gap-4 rounded-2xl p-6"><span className="shrink-0 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-linear-to-br from-electric-500/15 to-cyan-400/10 text-electric-600 transition-transform duration-350 group-hover:rotate-3 group-hover:scale-105 dark:text-cyan-300"><Icon name={item.icon} className="h-5 w-5" /></span><div><h3 className="font-display text-sm font-bold text-navy-900 dark:text-white">{item.title}</h3><p className="mt-1.5 text-sm leading-relaxed text-slate-600 dark:text-slate-400">{item.body}</p></div></article></Reveal>;
+}
+
+export default function IntegrationSection() {
+  return <section className="section-pad relative"><div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"><Reveal className="mx-auto max-w-2xl text-center"><span className="eyebrow justify-center">Hardware & Integration</span><h2 className="mt-4 font-display text-3xl font-bold text-navy-900 dark:text-white sm:text-4xl">Connect your existing workforce infrastructure</h2><p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-400">From biometric terminals to ERP systems — Global HRIS is hardware-agnostic and API-first.</p></Reveal><Reveal delay={80} variant="scale" className="mt-14"><div className="glass-panel overflow-hidden p-6 sm:p-8"><div className="relative flex flex-col items-center justify-between gap-8 sm:flex-row sm:gap-0">{integrationFlow.map((node, i) => <div key={node.label} className="relative z-10 flex flex-col items-center gap-2.5 sm:w-1/5"><span className={`relative inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-linear-to-br from-royal-600 via-electric-500 to-cyan-400 text-white shadow-lg shadow-electric-500/25 ${i === 0 ? 'pulse-dot' : ''}`}><Icon name={node.icon} className="h-6 w-6" /></span><span className="text-center text-xs font-semibold text-navy-900 dark:text-white">{node.label}</span>{i < integrationFlow.length - 1 && <span className="flow-pulse absolute left-1/2 top-14 h-8 w-1 -translate-x-1/2 bg-cyan-400 sm:left-full sm:top-7 sm:h-1 sm:w-full sm:translate-x-0" />}</div>)}</div></div></Reveal><div className="mt-8 grid gap-5 sm:grid-cols-2">{integrationDetails.map((item, i) => <DetailCard key={item.title} item={item} index={i} />)}</div></div></section>;
+}

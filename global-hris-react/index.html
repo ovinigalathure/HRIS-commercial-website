@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global HRIS | One Workforce Engine. Unlimited Global Scale.</title>
+    <meta name="description" content="Global HRIS is a self-configurable, cloud-native workforce platform bringing employee management, attendance, leave, payroll and reporting into one secure, intelligent platform. Start your free trial today." />
+    <meta name="keywords" content="HRIS, Human Resource Information System, HR Management Software, Payroll Software, Attendance Management, Employee Management, Leave Management, Workforce Management, HR Software" />
+    <meta property="og:title" content="Global HRIS — One Workforce Engine. Unlimited Global Scale." />
+    <meta property="og:description" content="A complete, intelligent, scalable and secure HR platform for modern organizations — employee management, attendance, leave, payroll and reporting in one place." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0a1128" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('ghris-theme');
+          var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          if (theme === 'dark') document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
