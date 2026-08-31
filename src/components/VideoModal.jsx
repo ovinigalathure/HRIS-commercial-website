@@ -1,10 +1,9 @@
 import { PlayCircle, X } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 import { useModal } from '../context/ModalContext';
-import { contact } from '../data/content';
 
 export default function VideoModal() {
-  const { videoOpen, closeVideo } = useModal();
+  const { videoOpen, closeVideo, openDemo } = useModal();
   const dialogRef = useRef(null);
 
   useEffect(() => {
@@ -61,9 +60,9 @@ export default function VideoModal() {
             <p className="mt-2 text-sm text-slate-400 max-w-sm">
               This product video is being finalised. In the meantime, book a live walkthrough with our team.
             </p>
-            <a href={`mailto:${contact.salesEmail}`} onClick={closeVideo} className="btn-primary mt-6">
+            <button type="button" onClick={() => { closeVideo(); openDemo(); }} className="btn-primary mt-6">
               Book a Live Demo
-            </a>
+            </button>
           </div>
         )}
 

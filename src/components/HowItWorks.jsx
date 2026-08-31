@@ -1,9 +1,12 @@
 import { Mail } from 'lucide-react';
-import { howItWorks, contact } from '../data/content';
+import { howItWorks } from '../data/content';
+import { useModal } from '../context/ModalContext';
 import Icon from './Icon';
 import Reveal from './Reveal';
 
 export default function HowItWorks() {
+  const { openContact } = useModal();
+
   return (
     <section className="section-pad relative bg-slate-50/70 dark:bg-navy-900/40 overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -34,9 +37,9 @@ export default function HowItWorks() {
           </div>
 
           <div className="mt-16 flex justify-center">
-            <a href={`mailto:${contact.salesEmail}`} className="btn-primary">
+            <button type="button" onClick={openContact} className="btn-primary">
               <Mail className="h-4 w-4" /> Connect With Us
-            </a>
+            </button>
           </div>
         </div>
       </div>

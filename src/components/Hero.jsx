@@ -5,7 +5,7 @@ import DashboardMock from './DashboardMock';
 import Reveal from './Reveal';
 
 export default function Hero() {
-  const { openTrial, openVideo } = useModal();
+  const { openTrial, openDemo } = useModal();
 
   return (
     <section id="product" className="relative overflow-hidden pt-16 pb-24 md:pt-24 md:pb-32">
@@ -32,7 +32,7 @@ export default function Hero() {
               <button type="button" onClick={openTrial} className="btn-primary">
                 Start Free Trial <ArrowRight className="h-4 w-4" />
               </button>
-              <button type="button" onClick={() => openVideo({ title: 'Global HRIS — Platform Walkthrough' })} className="btn-secondary">
+              <button type="button" onClick={openDemo} className="btn-secondary">
                 <PlayCircle className="h-4 w-4" /> Book a Demo
               </button>
             </div>

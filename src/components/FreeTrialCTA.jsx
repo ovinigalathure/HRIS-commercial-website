@@ -1,10 +1,9 @@
 import { ArrowRight, CalendarCheck } from 'lucide-react';
 import { useModal } from '../context/ModalContext';
-import { contact } from '../data/content';
 import Reveal from './Reveal';
 
 export default function FreeTrialCTA() {
-  const { openTrial } = useModal();
+  const { openTrial, openDemo } = useModal();
 
   return (
     <section className="relative px-4 sm:px-6 lg:px-8">
@@ -29,9 +28,9 @@ export default function FreeTrialCTA() {
                 <button type="button" onClick={openTrial} className="btn-orange">
                   Start Free Trial <ArrowRight className="h-4 w-4" />
                 </button>
-                <a href={`mailto:${contact.salesEmail}`} className="btn-secondary !bg-white/10 !border-white/20 !text-white">
+                <button type="button" onClick={openDemo} className="btn-secondary !bg-white/10 !border-white/20 !text-white">
                   <CalendarCheck className="h-4 w-4" /> Book a Demo
-                </a>
+                </button>
               </div>
             </div>
           </div>

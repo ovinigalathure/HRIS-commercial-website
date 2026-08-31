@@ -20,6 +20,8 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import VideoModal from './components/VideoModal';
 import FreeTrialModal from './components/FreeTrialModal';
+import BookDemoModal from './components/BookDemoModal';
+import ContactModal from './components/ContactModal';
 import FeatureDetailPopup from './components/FeatureDetailPopup';
 import FeatureSlideshow from './components/FeatureSlideshow';
 import TrialVerifyPage from './components/TrialVerifyPage';
@@ -71,6 +73,8 @@ function AppContent() {
       <ScrollToTop />
       <VideoModal />
       <FreeTrialModal />
+      <BookDemoModal />
+      <ContactModal />
       <FeatureDetailPopup />
       <FeatureSlideshow />
     </div>
