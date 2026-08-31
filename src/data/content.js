@@ -4,6 +4,12 @@
 // Global HRIS & Payroll Management System feature specification.
 // ============================================================
 
+import officeImg from '../assets/images/office.jpg';
+import logisticsImg from '../assets/images/logistics.jpg';
+import teaImg from '../assets/images/tea.jpg';
+import constructionImg from '../assets/images/construction.jpg';
+import apparelImg from '../assets/images/apparel.jpg';
+
 export const brand = {
   name: 'Global HRIS',
   company: 'Global Exceed Pvt Ltd',
@@ -113,26 +119,31 @@ export const painPoints = [
 export const whyUs = [
   {
     icon: 'SlidersHorizontal',
+    image: officeImg,
     title: 'Extreme Self-Customization',
     body: 'Stop adapting your business to your software. Global HRIS gives administrators total control over allowance rules, day-types (WRK, SAT, SUN, POY, STHL, CHL), late penalty thresholds, dynamic approval workflows, and master data configurations without hiring developers.',
   },
   {
     icon: 'Eye',
+    image: logisticsImg,
     title: 'Complete Workforce Visibility\u200B (From Desk to Floor)',
     body: 'Whether you manage white-collar executives in corporate suites, factory operators on production lines, or remote global contractors, Global HRIS unifies your entire workforce under one dashboard with real-time presence monitoring and live punch sync.',
   },
   {
     icon: 'Calculator',
+    image: teaImg,
     title: 'Zero-Variance Statutory & Payroll Automation',
     body: 'Run multi-currency or localized payrolls in minutes with absolute mathematical accuracy. Automate complex additions, deductions, coin brought-forward cash rounding, stamp duties, and direct bank/ERP journal exports.',
   },
   {
     icon: 'Network',
+    image: constructionImg,
     title: 'Hardware-Agnostic Biometric & Kiosk Integration',
     body: 'Connect any hardware device seamlessly. Direct API/TCP-IP synchronization supports Hikvision, ZKTeco, and Dahua biometric terminals, ruggedized floor kiosks, mobile camera barcode scanners, and tablet access.',
   },
   {
     icon: 'ScrollText',
+    image: apparelImg,
     title: 'Social Compliance & Audit Readiness',
     body: 'Built for enterprises facing strict international buyer standards (WRAP, Sedex, BSCI, ISO). Every attendance edit, approval override, and payroll modification is logged with an immutable audit trail showing "Before vs. After" values, user IDs, and timestamps.',
   },
