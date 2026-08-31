@@ -1,8 +1,9 @@
-import { ArrowRight, CheckCircle2, PlayCircle } from 'lucide-react';
+import { ArrowRight, PlayCircle } from 'lucide-react';
 import { hero } from '../data/content';
 import { useModal } from '../context/ModalContext';
 import DashboardMock from './DashboardMock';
 import Reveal from './Reveal';
+import homePreviewImg from '../assets/images/Final HRIS Home Page.png';
 
 export default function Hero() {
   const { openTrial, openDemo } = useModal();
@@ -16,7 +17,7 @@ export default function Hero() {
       <div className="absolute -z-10 bottom-0 right-1/4 h-[26rem] w-[26rem] rounded-full bg-accent-500/10 blur-[110px]" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-[1fr_1.25fr] gap-12 lg:gap-8 xl:gap-12 items-center">
           <Reveal>
             <span className="eyebrow mb-5">
               <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 pulse-dot" />
@@ -37,18 +38,10 @@ export default function Hero() {
               </button>
             </div>
 
-            <div className="mt-9 flex flex-wrap gap-x-6 gap-y-2.5">
-              {hero.trustLine.map((line) => (
-                <span key={line} className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 dark:text-slate-400">
-                  <CheckCircle2 className="h-3.5 w-3.5 text-cyan-500 dark:text-cyan-400" />
-                  {line}
-                </span>
-              ))}
-            </div>
           </Reveal>
 
           <Reveal variant="scale" delay={150} className="relative lg:pl-6">
-            <DashboardMock />
+            <DashboardMock image={homePreviewImg} />
           </Reveal>
         </div>
       </div>
