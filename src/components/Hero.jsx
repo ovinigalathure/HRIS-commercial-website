@@ -18,7 +18,7 @@ export default function Hero() {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-[1fr_1.25fr] gap-12 lg:gap-8 xl:gap-12 items-center">
-          <Reveal>
+          <Reveal className="order-2 lg:order-1">
             <span className="eyebrow mb-5">
               <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 pulse-dot" />
               {hero.eyebrow}
@@ -40,7 +40,7 @@ export default function Hero() {
 
           </Reveal>
 
-          <Reveal variant="scale" delay={150} className="relative lg:pl-6">
+          <Reveal variant="scale" delay={150} className="relative order-1 lg:order-2 lg:pl-6">
             <DashboardMock image={homePreviewImg} />
           </Reveal>
         </div>
