@@ -195,10 +195,10 @@ export const integrationFlow = [
 ];
 
 export const integrationDetails = [
-  { icon: 'Fingerprint', title: 'Biometric Attendance', body: 'Direct API/TCP-IP synchronization with Hikvision biometric terminals, with real-time punch sync back into the attendance engine.' },
-  { icon: 'ScanLine', title: 'Barcode & Kiosk Scanning', body: 'Mobile-camera and hardware barcode scanning power worker kiosks and the canteen meal-management module.' },
-  { icon: 'Network', title: 'ERP / MES Integration', body: 'Clean RESTful API endpoints synchronize workforce and production data with SAP, Oracle, Microsoft Dynamics or custom MES systems.' },
-  { icon: 'ScanFace', title: 'NIC / OCR Scanning', body: 'Employee registration auto-fills from a scanned NIC using built-in OCR, with an optional AI-enhanced mode for legacy handwritten cards.' },
+  { icon: 'Fingerprint', title: 'Biometric Attendance', body: 'Direct API/TCP-IP synchronization with Hikvision biometric terminals, with real-time punch sync back into the attendance engine.', image: constructionImg },
+  { icon: 'ScanLine', title: 'Barcode & Kiosk Scanning', body: 'Mobile-camera and hardware barcode scanning power worker kiosks and the canteen meal-management module.', image: logisticsImg },
+  { icon: 'Network', title: 'ERP / MES Integration', body: 'Clean RESTful API endpoints synchronize workforce and production data with SAP, Oracle, Microsoft Dynamics or custom MES systems.', image: officeImg },
+  { icon: 'ScanFace', title: 'NIC / OCR Scanning', body: 'Employee registration auto-fills from a scanned NIC using built-in OCR, with an optional AI-enhanced mode for legacy handwritten cards.', image: hospitalImg },
 ];
 
 export const finalCta = {
