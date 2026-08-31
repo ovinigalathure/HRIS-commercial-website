@@ -1,10 +1,10 @@
-import { ArrowRight, Mail, PhoneCall } from 'lucide-react';
-import { finalCta, contact } from '../data/content';
+import { ArrowRight, CalendarCheck } from 'lucide-react';
+import { finalCta } from '../data/content';
 import { useModal } from '../context/ModalContext';
 import Reveal from './Reveal';
 
 export default function FinalCTA() {
-  const { openTrial } = useModal();
+  const { openTrial, openDemo } = useModal();
 
   return (
     <section id="contact" className="section-pad relative">
@@ -17,14 +17,10 @@ export default function FinalCTA() {
             <button type="button" onClick={openTrial} className="btn-primary">
               Start Free Trial <ArrowRight className="h-4 w-4" />
             </button>
-            <a href={`mailto:${contact.salesEmail}`} className="btn-secondary">
-              <Mail className="h-4 w-4" /> Contact Sales Team
-            </a>
+            <button type="button" onClick={openDemo} className="btn-secondary">
+              <CalendarCheck className="h-4 w-4" /> Book a Demo
+            </button>
           </div>
-
-          <a href={contact.phoneHref} className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-electric-500 transition-colors">
-            <PhoneCall className="h-4 w-4" /> {contact.phoneDisplay}
-          </a>
         </Reveal>
       </div>
     </section>

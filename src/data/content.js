@@ -14,6 +14,7 @@ export const contact = {
   salesEmail: 'sales@globalhris.com',
   companyEmail: 'charith@globalexceed.com',
   phoneHref: 'tel:+94768572112',
+  phoneDisplay: '+94 (76) 857 2112',
   whatsappHref: 'https://wa.me/94768572112',
   siteUrl: 'global-hris.com',
   companyUrl: 'globalexceed.com',
