@@ -11,6 +11,7 @@ import SecuritySection from './components/SecuritySection';
 import IntegrationSection from './components/IntegrationSection';
 import StatsSection from './components/StatsSection';
 import RoadmapSection from './components/RoadmapSection';
+import IndustrySlideshow from './components/IndustrySlideshow';
 import VideoSection from './components/VideoSection';
 import Testimonials from './components/Testimonials';
 import FreeTrialCTA from './components/FreeTrialCTA';
@@ -63,6 +64,7 @@ function AppContent() {
         <SecuritySection />
         <IntegrationSection />
         <StatsSection />
+        <IndustrySlideshow />
         <RoadmapSection />
         <Testimonials />
         <FreeTrialCTA />
