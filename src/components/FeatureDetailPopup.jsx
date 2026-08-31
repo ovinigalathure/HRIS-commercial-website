@@ -47,8 +47,19 @@ export default function FeatureDetailPopup() {
                    bg-white dark:bg-navy-900 border border-slate-200 dark:border-white/10
                    shadow-[0_40px_80px_-20px_rgba(0,0,0,0.35)] dark:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.7)]"
       >
-        {/* Hero gradient header */}
-        <div className="relative h-48 bg-gradient-to-br from-royal-600 via-electric-500 to-cyan-400 overflow-hidden">
+        {/* Hero header */}
+        <div className="relative h-48 overflow-hidden">
+          {feature.image && (
+            <>
+              <img
+                src={feature.image}
+                alt={feature.label}
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-royal-900/60 via-navy-950/50 to-navy-950/80" />
+            </>
+          )}
+
           {/* Animated background orbs */}
           <div className="absolute -top-20 -right-20 h-56 w-56 rounded-full bg-white/10 blur-2xl animate-[float-slow_6s_ease-in-out_infinite]" />
           <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-cyan-400/20 blur-2xl animate-[float-slow_7s_ease-in-out_infinite_1s]" />

@@ -225,6 +225,12 @@ h1, h2, h3, h4, .font-display {
   to { transform: scaleX(1); }
 }
 
+/* ---------- The Platform card animations ---------- */
+@keyframes shine-sweep {
+  0% { transform: translateX(-130%) skewX(-18deg); }
+  100% { transform: translateX(230%) skewX(-18deg); }
+}
+
 /* Line clamp helper (no plugin) */
 .line-clamp-3 {
   display: -webkit-box;

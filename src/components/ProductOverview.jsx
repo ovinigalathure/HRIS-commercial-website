@@ -21,15 +21,28 @@ export default function ProductOverview() {
               <button
                 type="button"
                 onClick={() => openFeatureDetail(p.featureKey)}
-                className="glass-card rounded-2xl p-6 text-center h-full flex flex-col items-center justify-center gap-3 cursor-pointer group w-full"
+                className="group relative flex h-56 sm:h-64 w-full flex-col justify-end overflow-hidden rounded-2xl text-center cursor-pointer ring-1 ring-white/10 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_24px_50px_-15px_rgba(15,42,90,0.55)] dark:hover:shadow-[0_24px_50px_-15px_rgba(0,0,0,0.85)]"
               >
-                <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-royal-600 via-electric-500 to-cyan-400 text-white shadow-lg shadow-electric-500/25 transition-transform duration-300 group-hover:scale-110">
-                  <Icon name={p.icon} className="h-5 w-5" />
-                </span>
-                <span className="text-sm font-semibold text-navy-900 dark:text-white">{p.label}</span>
-                <span className="text-[11px] text-slate-400 dark:text-slate-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Click to explore
-                </span>
+                {p.image && (
+                  <>
+                    <img
+                      src={p.image}
+                      alt={p.label}
+                      loading="lazy"
+                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.12]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy-950/70 via-navy-950/20 to-transparent transition-opacity duration-500 group-hover:from-navy-950/80" />
+                    <span className="pointer-events-none absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-transparent via-white/25 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-[shine-sweep_.9s_ease-out] transition-opacity duration-300" />
+                    <span className="absolute top-0 left-1/2 h-0.5 w-0 -translate-x-1/2 bg-gradient-to-r from-cyan-300 via-white to-cyan-300 transition-all duration-500 group-hover:w-2/3" />
+                  </>
+                )}
+
+                <div className="relative z-10 m-1.5 mt-auto flex items-center justify-center gap-2 self-center rounded-full bg-white/10 py-1.5 pl-1.5 pr-4 text-center backdrop-blur-md ring-1 ring-white/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.15)] transition-all duration-500 group-hover:bg-white/20 group-hover:ring-white/30 group-hover:-translate-y-0.5">
+                  <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white/20 text-white ring-1 ring-white/25 shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12 group-hover:bg-white/30">
+                    <Icon name={p.icon} className="h-3.5 w-3.5" />
+                  </span>
+                  <span className="text-sm font-semibold leading-none text-white drop-shadow-sm">{p.label}</span>
+                </div>
               </button>
             </Reveal>
           ))}

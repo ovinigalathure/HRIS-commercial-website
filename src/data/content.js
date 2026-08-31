@@ -9,6 +9,7 @@ import logisticsImg from '../assets/images/logistics.jpg';
 import teaImg from '../assets/images/tea.jpg';
 import constructionImg from '../assets/images/construction.jpg';
 import apparelImg from '../assets/images/apparel.jpg';
+import hospitalImg from '../assets/images/hospital.jpg';
 
 export const brand = {
   name: 'Global HRIS',
@@ -70,14 +71,14 @@ export const productOverview = {
   title: 'Every HR operation, one connected ecosystem',
   body: "Global HRIS centralizes the workforce operations that usually live across five different tools — employee records, attendance, leave, payroll and reporting — into one secure, role-aware platform. Configure it once for your organization's structure, pay rules and compliance needs, then let it run.",
   pillars: [
-    { icon: 'Users', label: 'Employee Management', featureKey: 'workforce' },
-    { icon: 'Fingerprint', label: 'Attendance', featureKey: 'attendance' },
-    { icon: 'CalendarClock', label: 'Leave', featureKey: 'leave' },
-    { icon: 'Wallet', label: 'Payroll', featureKey: 'payroll' },
-    { icon: 'FileText', label: 'Payslips', featureKey: 'payslip' },
-    { icon: 'BarChart3', label: 'Reporting', featureKey: 'reports' },
-    { icon: 'Eye', label: 'Workforce Visibility', featureKey: 'visibility' },
-    { icon: 'Lock', label: 'Security', featureKey: 'security' },
+    { icon: 'Users', label: 'Employee Management', featureKey: 'workforce', image: officeImg },
+    { icon: 'Fingerprint', label: 'Attendance', featureKey: 'attendance', image: hospitalImg },
+    { icon: 'CalendarClock', label: 'Leave', featureKey: 'leave', image: teaImg },
+    { icon: 'Wallet', label: 'Payroll', featureKey: 'payroll', image: officeImg },
+    { icon: 'FileText', label: 'Payslips', featureKey: 'payslip', image: apparelImg },
+    { icon: 'BarChart3', label: 'Reporting', featureKey: 'reports', image: logisticsImg },
+    { icon: 'Eye', label: 'Workforce Visibility', featureKey: 'visibility', image: constructionImg },
+    { icon: 'Lock', label: 'Security', featureKey: 'security', image: hospitalImg },
   ],
 };
 
