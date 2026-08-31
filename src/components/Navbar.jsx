@@ -1,6 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { nav, contact } from '../data/content';
+import { nav } from '../data/content';
 import { useModal } from '../context/ModalContext';
 import Logo from './Logo';
 import ThemeToggle from './ThemeToggle';
@@ -54,12 +54,6 @@ export default function Navbar() {
           </nav>
 
           <div className="ml-auto hidden lg:flex items-center gap-3">
-            <a
-              href={contact.phoneHref}
-              className="hidden xl:flex items-center text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-electric-500 transition-colors"
-            >
-              {contact.phoneDisplay}
-            </a>
             <button type="button" onClick={openTrial} className="btn-primary">
               Start Free Trial
             </button>
@@ -98,12 +92,6 @@ export default function Navbar() {
               {item.label}
             </a>
           ))}
-          <a
-            href={contact.phoneHref}
-            className="flex items-center px-4 py-3 text-sm font-medium text-slate-600 dark:text-slate-300"
-          >
-            {contact.phoneDisplay}
-          </a>
           <div className="px-2 pt-2">
             <button
               type="button"
