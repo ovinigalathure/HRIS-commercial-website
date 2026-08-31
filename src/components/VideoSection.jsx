@@ -38,7 +38,7 @@ export default function VideoSection() {
   const [featured, ...rest] = videos;
 
   return (
-    <section id="videos" className="section-pad relative bg-slate-50/70 dark:bg-navy-900/40">
+    <section id="videos" className="section-pad relative section-tint dark:bg-navy-900/40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-2xl mx-auto text-center">
           <span className="eyebrow justify-center">Watch the Product Demo</span>

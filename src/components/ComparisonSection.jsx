@@ -151,7 +151,7 @@ function Matrix() {
 
 export default function ComparisonSection() {
   return (
-    <section className="section-pad relative overflow-hidden bg-slate-50/70 dark:bg-navy-900/40">
+    <section className="section-pad relative overflow-hidden section-tint dark:bg-navy-900/40">
       <div className="absolute -z-10 -left-32 top-10 h-[26rem] w-[26rem] rounded-full bg-electric-500/10 blur-[120px]" />
       <div className="absolute -z-10 -right-32 bottom-0 h-[24rem] w-[24rem] rounded-full bg-cyan-400/10 blur-[110px]" />
 

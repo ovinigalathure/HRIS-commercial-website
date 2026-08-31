@@ -86,7 +86,7 @@ function PainCard({ item, index }) {
 
 export default function PainPoints() {
   return (
-    <section className="section-pad relative overflow-hidden bg-slate-50/70 dark:bg-navy-900/40">
+    <section className="section-pad relative overflow-hidden section-tint dark:bg-navy-900/40">
       {/* Background glows */}
       <div className="absolute -z-10 -top-32 -left-32 h-[30rem] w-[30rem] rounded-full bg-electric-500/10 blur-[120px]" />
       <div className="absolute -z-10 bottom-0 -right-32 h-[28rem] w-[28rem] rounded-full bg-accent-500/[0.07] blur-[110px]" />

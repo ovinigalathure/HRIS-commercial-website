@@ -8,7 +8,7 @@ export default function HowItWorks() {
   const { openContact } = useModal();
 
   return (
-    <section className="section-pad relative bg-slate-50/70 dark:bg-navy-900/40 overflow-hidden">
+    <section className="section-pad relative overflow-hidden section-tint dark:bg-navy-900/40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-2xl mx-auto text-center">
           <span className="eyebrow justify-center">Getting Started</span>

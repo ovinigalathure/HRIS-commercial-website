@@ -48,7 +48,7 @@ function AppContent() {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-navy-950 transition-colors duration-500">
+    <div className="min-h-screen bg-transparent dark:bg-navy-950 transition-colors duration-500">
       <AnnouncementBar />
       <Navbar />
 
