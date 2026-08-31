@@ -22,6 +22,7 @@ import VideoModal from './components/VideoModal';
 import FreeTrialModal from './components/FreeTrialModal';
 import BookDemoModal from './components/BookDemoModal';
 import ContactModal from './components/ContactModal';
+import FaqQuestionModal from './components/FaqQuestionModal';
 import FeatureDetailPopup from './components/FeatureDetailPopup';
 import FeatureSlideshow from './components/FeatureSlideshow';
 import TrialVerifyPage from './components/TrialVerifyPage';
@@ -75,6 +76,7 @@ function AppContent() {
       <FreeTrialModal />
       <BookDemoModal />
       <ContactModal />
+      <FaqQuestionModal />
       <FeatureDetailPopup />
       <FeatureSlideshow />
     </div>

@@ -1,7 +1,6 @@
 import { Mail, Plus } from 'lucide-react';
 import { useState } from 'react';
 import faqs from '../data/faqs';
-import { contact } from '../data/content';
 import { useModal } from '../context/ModalContext';
 import Reveal from './Reveal';
 
@@ -11,8 +10,8 @@ function FAQItem({ item, isOpen, onToggle }) {
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0);
-  const { openTrial } = useModal();
+  const { openTrial, openFaq } = useModal();
   const midpoint = Math.ceil(faqs.length / 2);
   const columns = [faqs.slice(0, midpoint), faqs.slice(midpoint)];
-  return <section id="faq" className="section-pad relative bg-slate-50/70 dark:bg-navy-900/40"><div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8"><Reveal className="text-center"><span className="eyebrow justify-center">Questions</span><h2 className="mt-4 font-display text-3xl font-bold text-navy-900 dark:text-white sm:text-4xl">Frequently asked questions</h2></Reveal><div className="mt-12 grid gap-3 lg:grid-cols-2 lg:gap-5">{columns.map((column, columnIndex) => <div key={columnIndex} className="space-y-3">{column.map((item, itemIndex) => { const index = columnIndex * midpoint + itemIndex; return <Reveal key={item.q} delay={index * 40} variant={columnIndex ? 'right' : 'left'}><FAQItem item={item} isOpen={openIndex === index} onToggle={() => setOpenIndex(openIndex === index ? -1 : index)} /></Reveal>; })}</div>)}</div><Reveal delay={240} className="glass-panel mt-10 flex flex-col items-center justify-between gap-5 rounded-2xl px-6 py-6 text-center sm:flex-row sm:text-left"><div><h3 className="font-display text-lg font-bold text-navy-900 dark:text-white">Still have questions?</h3><p className="mt-1 text-sm text-slate-500 dark:text-slate-400">Our team can walk you through the platform.</p></div><div className="flex flex-wrap justify-center gap-3"><button type="button" onClick={openTrial} className="btn-primary">Start Free Trial</button><a href={`mailto:${contact.salesEmail}`} className="btn-secondary"><Mail className="h-4 w-4" /> Contact us</a></div></Reveal></div></section>;
+  return <section id="faq" className="section-pad relative bg-slate-50/70 dark:bg-navy-900/40"><div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8"><Reveal className="text-center"><span className="eyebrow justify-center">Questions</span><h2 className="mt-4 font-display text-3xl font-bold text-navy-900 dark:text-white sm:text-4xl">Frequently asked questions</h2></Reveal><div className="mt-12 grid gap-3 lg:grid-cols-2 lg:gap-5">{columns.map((column, columnIndex) => <div key={columnIndex} className="space-y-3">{column.map((item, itemIndex) => { const index = columnIndex * midpoint + itemIndex; return <Reveal key={item.q} delay={index * 40} variant={columnIndex ? 'right' : 'left'}><FAQItem item={item} isOpen={openIndex === index} onToggle={() => setOpenIndex(openIndex === index ? -1 : index)} /></Reveal>; })}</div>)}</div><Reveal delay={240} className="glass-panel mt-10 flex flex-col items-center justify-between gap-5 rounded-2xl px-6 py-6 text-center sm:flex-row sm:text-left"><div><h3 className="font-display text-lg font-bold text-navy-900 dark:text-white">Still have questions?</h3><p className="mt-1 text-sm text-slate-500 dark:text-slate-400">Our team can walk you through the platform.</p></div><div className="flex flex-wrap justify-center gap-3"><button type="button" onClick={openTrial} className="btn-primary">Start Free Trial</button><button type="button" onClick={openFaq} className="btn-secondary"><Mail className="h-4 w-4" /> Contact us</button></div></Reveal></div></section>;
 }

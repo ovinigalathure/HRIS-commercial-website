@@ -6,6 +6,7 @@ export function ModalProvider({ children }) {
   const [trialOpen, setTrialOpen] = useState(false);
   const [demoOpen, setDemoOpen] = useState(false);
   const [contactOpen, setContactOpen] = useState(false);
+  const [faqOpen, setFaqOpen] = useState(false);
   const [videoOpen, setVideoOpen] = useState(null);
   const [featureDetailOpen, setFeatureDetailOpen] = useState(null);
   const [featureSlideshowOpen, setFeatureSlideshowOpen] = useState(null);
@@ -17,6 +18,8 @@ export function ModalProvider({ children }) {
   const closeDemo = useCallback(() => setDemoOpen(false), []);
   const openContact = useCallback(() => setContactOpen(true), []);
   const closeContact = useCallback(() => setContactOpen(false), []);
+  const openFaq = useCallback(() => setFaqOpen(true), []);
+  const closeFaq = useCallback(() => setFaqOpen(false), []);
   const openVideo = useCallback((video) => setVideoOpen(video), []);
   const closeVideo = useCallback(() => setVideoOpen(null), []);
   const openFeatureDetail = useCallback((key) => setFeatureDetailOpen(key), []);
@@ -38,13 +41,14 @@ export function ModalProvider({ children }) {
       trialOpen, openTrial, closeTrial,
       demoOpen, openDemo, closeDemo,
       contactOpen, openContact, closeContact,
+      faqOpen, openFaq, closeFaq,
       videoOpen, openVideo, closeVideo,
       featureDetailOpen, openFeatureDetail, closeFeatureDetail,
       featureSlideshowOpen, openFeatureSlideshow, closeFeatureSlideshow,
       view, goTrial, goTrialDemo, goHome,
     }),
     [trialOpen, openTrial, closeTrial, demoOpen, openDemo, closeDemo,
-     contactOpen, openContact, closeContact,
+     contactOpen, openContact, closeContact, faqOpen, openFaq, closeFaq,
      videoOpen, openVideo, closeVideo,
      featureDetailOpen, openFeatureDetail, closeFeatureDetail,
      featureSlideshowOpen, openFeatureSlideshow, closeFeatureSlideshow,
