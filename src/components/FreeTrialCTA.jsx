@@ -1,7 +1,7 @@
 import { ArrowRight, CalendarCheck, CheckCircle2, Sparkles } from 'lucide-react';
 import { useModal } from '../context/ModalContext';
 import Reveal from './Reveal';
-import officeImg from '../assets/images/office.jpg';
+import hrisImg from '../assets/images/HRIS.jpeg';
 
 const perks = ['No credit card required', 'Personalized workspace', 'Setup in minutes'];
 
@@ -15,7 +15,7 @@ export default function FreeTrialCTA() {
           <div className="relative overflow-hidden rounded-[2.5rem]">
             {/* Full-bleed background image */}
             <img
-              src={officeImg}
+              src={hrisImg}
               alt="Begin your free trial with Global HRIS"
               loading="lazy"
               className="absolute inset-0 h-full w-full object-cover"

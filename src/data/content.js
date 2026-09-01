@@ -25,6 +25,11 @@ import zeroVariancePayrollImg from '../assets/images/Zero-Variance Statutory & P
 import hardwareAgnosticImg from '../assets/images/Hardware-Agnostic Biometric & Kiosk Integration.jpg';
 import socialComplianceImg from '../assets/images/Social Compliance & Audit Readiness.jpg';
 
+import biometricAttendanceImg from '../assets/images/Biometric Attendance.jpg';
+import barcodeKioskImg from '../assets/images/Barcode & Kiosk Scanning.jpg';
+import erpMesImg from '../assets/images/ERP_MES Integration.jpg';
+import nicOcrImg from '../assets/images/NIC_OCR Scanning.jpg';
+
 export const brand = {
   name: 'Global HRIS',
   company: 'Global Exceed Pvt Ltd',
@@ -209,10 +214,10 @@ export const integrationFlow = [
 ];
 
 export const integrationDetails = [
-  { icon: 'Fingerprint', title: 'Biometric Attendance', body: 'Direct API/TCP-IP synchronization with Hikvision biometric terminals, with real-time punch sync back into the attendance engine.', image: constructionImg },
-  { icon: 'ScanLine', title: 'Barcode & Kiosk Scanning', body: 'Mobile-camera and hardware barcode scanning power worker kiosks and the canteen meal-management module.', image: logisticsImg },
-  { icon: 'Network', title: 'ERP / MES Integration', body: 'Clean RESTful API endpoints synchronize workforce and production data with SAP, Oracle, Microsoft Dynamics or custom MES systems.', image: officeImg },
-  { icon: 'ScanFace', title: 'NIC / OCR Scanning', body: 'Employee registration auto-fills from a scanned NIC using built-in OCR, with an optional AI-enhanced mode for legacy handwritten cards.', image: hospitalImg },
+  { icon: 'Fingerprint', title: 'Biometric Attendance', body: 'Direct API/TCP-IP synchronization with Hikvision biometric terminals, with real-time punch sync back into the attendance engine.', image: biometricAttendanceImg },
+  { icon: 'ScanLine', title: 'Barcode & Kiosk Scanning', body: 'Mobile-camera and hardware barcode scanning power worker kiosks and the canteen meal-management module.', image: barcodeKioskImg },
+  { icon: 'Network', title: 'ERP / MES Integration', body: 'Clean RESTful API endpoints synchronize workforce and production data with SAP, Oracle, Microsoft Dynamics or custom MES systems.', image: erpMesImg },
+  { icon: 'ScanFace', title: 'NIC / OCR Scanning', body: 'Employee registration auto-fills from a scanned NIC using built-in OCR, with an optional AI-enhanced mode for legacy handwritten cards.', image: nicOcrImg },
 ];
 
 export const finalCta = {

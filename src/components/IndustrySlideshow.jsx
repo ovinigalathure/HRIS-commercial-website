@@ -2,12 +2,12 @@ import { ArrowLeft, ArrowRight, Building2, ChevronLeft, ChevronRight, Hospital, 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Reveal from './Reveal';
 
-import apparelImg from '../assets/images/apparel.jpg';
-import teaImg from '../assets/images/tea.jpg';
-import hospitalImg from '../assets/images/hospital.jpg';
-import constructionImg from '../assets/images/construction.jpg';
-import officeImg from '../assets/images/office.jpg';
-import logisticsImg from '../assets/images/logistics.jpg';
+import apparelImg from '../assets/images/apparel and garment.jpg';
+import teaImg from '../assets/images/Tea Plantations & Agriculture.jpg';
+import hospitalImg from '../assets/images/Hospitals & Healthcare.jpg';
+import constructionImg from '../assets/images/Construction & Engineering.jpg';
+import officeImg from '../assets/images/Corporate Offices.jpg';
+import logisticsImg from '../assets/images/Logistics & Manufacturing.jpg';
 
 const industries = [
   {
