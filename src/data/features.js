@@ -4,18 +4,20 @@
 // feature specification (Functional Module Summary, sections 1-22).
 // ============================================================
 
-import officeImg from '../assets/images/office.jpg';
-import logisticsImg from '../assets/images/logistics.jpg';
-import teaImg from '../assets/images/tea.jpg';
-import constructionImg from '../assets/images/construction.jpg';
-import apparelImg from '../assets/images/apparel.jpg';
-import hospitalImg from '../assets/images/hospital.jpg';
+import employeeManagementImg from '../assets/images/employee-management.jpg';
+import attendanceImg from '../assets/images/attendance.jpg';
+import leaveImg from '../assets/images/leave.jpg';
+import payrollImg from '../assets/images/payroll.jpg';
+import payslipImg from '../assets/images/payslip.png';
+import reportingImg from '../assets/images/reporting.jpg';
+import workforceVisibilityImg from '../assets/images/workforce visibility.jpg';
+import securityImg from '../assets/images/security.jpg';
 
 const features = [
   {
     key: 'workforce',
     icon: 'Users',
-    image: officeImg,
+    image: employeeManagementImg,
     label: 'Workforce Management',
     tagline: 'Employee Master & Onboarding',
     description:
@@ -36,7 +38,7 @@ const features = [
   {
     key: 'attendance',
     icon: 'Fingerprint',
-    image: hospitalImg,
+    image: attendanceImg,
     label: 'Time & Attendance',
     tagline: 'Attendance & Biometric Engine',
     description:
@@ -57,7 +59,7 @@ const features = [
   {
     key: 'leave',
     icon: 'CalendarClock',
-    image: teaImg,
+    image: leaveImg,
     label: 'Leave Management',
     tagline: 'Configurable Approval Workflows',
     description:
@@ -78,7 +80,7 @@ const features = [
   {
     key: 'payroll',
     icon: 'Wallet',
-    image: officeImg,
+    image: payrollImg,
     label: 'Payroll',
     tagline: 'Statutory Payroll Automation',
     description:
@@ -99,7 +101,7 @@ const features = [
   {
     key: 'payslip',
     icon: 'FileText',
-    image: apparelImg,
+    image: payslipImg,
     label: 'Payslips & Meals',
     tagline: 'Trilingual Payslips & Canteen',
     description:
@@ -120,7 +122,7 @@ const features = [
   {
     key: 'reports',
     icon: 'BarChart3',
-    image: logisticsImg,
+    image: reportingImg,
     label: 'Analytics & Reporting',
     tagline: 'Reports & Workforce Analytics',
     description:
@@ -141,7 +143,7 @@ const features = [
   {
     key: 'security',
     icon: 'ShieldCheck',
-    image: hospitalImg,
+    image: securityImg,
     label: 'Administration & Security',
     tagline: 'Role-Based Access & Audit',
     description:
@@ -182,7 +184,7 @@ const features = [
   {
     key: 'visibility',
     icon: 'Eye',
-    image: constructionImg,
+    image: workforceVisibilityImg,
     label: 'Workforce Visibility',
     tagline: 'Real-Time Dashboards & Analytics',
     description:
