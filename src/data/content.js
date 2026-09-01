@@ -29,7 +29,7 @@ export const contact = {
 
 export const nav = [
   { label: 'Product', href: '#product' },
-  { label: 'Features', href: '#features' },
+  { label: 'Features', href: '#platform' },
   { label: 'Security', href: '#security' },
   { label: 'Videos', href: '#videos' },
   { label: 'FAQ', href: '#faq' },

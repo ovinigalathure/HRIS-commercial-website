@@ -16,15 +16,13 @@ export default function DashboardMock({ className = '', image }) {
       <div className="absolute -inset-10 bg-gradient-to-br from-electric-500/25 via-cyan-400/10 to-transparent blur-3xl rounded-full glow-pan" />
 
       {/* Main panel */}
-      <div className="relative glass-strong rounded-[1.75rem]">
+      <div className="relative rounded-[1.75rem]">
         {image ? (
           <div className="antialiased">
             {/* Outer glow ring */}
             <div className="absolute -inset-6 -z-10 rounded-[2.5rem] bg-gradient-to-br from-electric-500/40 via-cyan-400/20 to-royal-600/30 blur-2xl opacity-70" />
 
-            {/* Gradient frame */}
-            <div className="rounded-[1.6rem] bg-gradient-to-br from-electric-500/70 via-cyan-400/40 to-royal-600/70 p-[3px] shadow-[0_30px_80px_-20px_rgba(15,42,90,0.55)]">
-              <div className="relative overflow-hidden rounded-[calc(1.6rem-3px)] bg-navy-950">
+            <div className="relative overflow-hidden rounded-[1.6rem] bg-navy-950">
                 {/* Top corner glow accents */}
                 <div className="pointer-events-none absolute -top-16 -right-16 h-40 w-40 rounded-full bg-cyan-400/25 blur-3xl" />
                 <div className="pointer-events-none absolute -bottom-16 -left-16 h-40 w-40 rounded-full bg-electric-500/25 blur-3xl" />
@@ -49,7 +47,6 @@ export default function DashboardMock({ className = '', image }) {
                   className="block w-full object-cover"
                 />
               </div>
-            </div>
 
             {/* Floating metric chips */}
             <div className="float-slow absolute -left-8 -top-8 hidden md:flex items-center gap-2.5 rounded-2xl bg-white/90 dark:bg-navy-900/90 px-4 py-3 shadow-xl ring-1 ring-slate-900/5 dark:ring-white/10 backdrop-blur" style={{ '--rot': '-5deg' }}>

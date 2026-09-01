@@ -7,7 +7,7 @@ export default function ProductOverview() {
   const { openFeatureDetail } = useModal();
 
   return (
-    <section className="section-pad relative">
+    <section id="platform" className="section-pad relative">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-2xl mx-auto text-center">
           <span className="eyebrow justify-center">{productOverview.eyebrow}</span>

@@ -36,7 +36,7 @@ export default function Navbar() {
   return (
     <header id="top" className={`sticky top-0 z-40 glass-nav transition-shadow duration-300 ${scrolled ? 'glass-nav-scrolled' : ''}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-18 items-center gap-6 py-3">
+        <div className="flex h-18 items-center gap-3 py-3">
           <Logo />
 
           <nav className="hidden lg:flex items-center gap-1 ml-4">
