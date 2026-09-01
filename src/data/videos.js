@@ -1,33 +1,33 @@
 // ============================================================
 // Product videos.
-// No product video files/links were included in the supplied content —
-// so this ships with placeholder entries only (poster art, no fake
-// video source). Swap `src` for a real MP4/YouTube/Vimeo URL and this
-// section + the modal will work immediately, no other code changes needed.
 // ============================================================
+import mainWithVoice from '../assets/images/main with voice.mp4';
+import features from '../assets/images/features.mp4';
+import mainWithoutVoice from '../assets/images/main without voice.mp4';
+
 const videos = [
   {
     id: 'overview',
     title: 'Global HRIS — Platform Walkthrough',
-    description: 'A guided tour of the dashboard, employee master, attendance engine and payroll run — coming soon.',
+    description: 'A guided tour of the dashboard, employee master, attendance engine and payroll run.',
     duration: null,
-    src: null, // TODO: add real video URL (mp4 / YouTube / Vimeo embed)
+    src: mainWithVoice,
     featured: true,
   },
   {
-    id: 'payroll',
-    title: 'Running a Statutory Payroll Cycle',
-    description: 'See a full payroll run from draft to finalised payslips.',
+    id: 'features',
+    title: 'Global HRIS — Features',
+    description: 'A closer look at the key features powering the platform.',
     duration: null,
-    src: null,
+    src: features,
     featured: false,
   },
   {
-    id: 'attendance',
-    title: 'Biometric Attendance in Action',
-    description: 'Live punch sync from a Hikvision terminal to the attendance dashboard.',
+    id: 'overview-mute',
+    title: 'Global HRIS — Platform Walkthrough',
+    description: 'The full platform walkthrough, ready to explore.',
     duration: null,
-    src: null,
+    src: mainWithoutVoice,
     featured: false,
   },
 ];

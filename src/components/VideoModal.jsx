@@ -51,7 +51,13 @@ export default function VideoModal() {
 
         {hasSrc ? (
           <div className="aspect-video bg-black">
-            <video src={videoOpen.src} controls autoPlay className="h-full w-full" />
+            <video
+              src={videoOpen.src}
+              controls
+              autoPlay
+              playsInline
+              className="h-full w-full object-cover"
+            />
           </div>
         ) : (
           <div className="aspect-video bg-gradient-to-br from-navy-900 via-navy-950 to-navy-900 flex flex-col items-center justify-center text-center px-8">

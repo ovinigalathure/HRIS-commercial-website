@@ -6,18 +6,31 @@ import Reveal from './Reveal';
 
 function VideoPoster({ video, featured }) {
   const { openVideo } = useModal();
+
   return (
     <button
       type="button"
       onClick={() => openVideo(video)}
-      className={`group relative w-full text-left rounded-3xl overflow-hidden glass-strong transition-all duration-500 hover:-translate-y-1.5
-        ${featured ? 'aspect-[16/10]' : 'aspect-video'}`}
+      className={`group relative w-full overflow-hidden rounded-3xl text-left transition-all duration-500 hover:-translate-y-1.5 ${featured ? 'aspect-[16/10]' : 'aspect-video'}`}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-950 to-navy-900 flex items-center justify-center overflow-hidden">
-        <div className="scale-[0.55] sm:scale-[0.7] opacity-80 group-hover:opacity-95 transition-opacity duration-500">
-          <DashboardMock className="pointer-events-none" />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/10 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-950 to-navy-900">
+        {video.src ? (
+          <video
+            src={video.src}
+            muted
+            autoPlay
+            loop
+            playsInline
+            className="h-full w-full object-cover opacity-90 transition duration-500 group-hover:opacity-100"
+          />
+        ) : (
+          <div className="flex h-full items-center justify-center overflow-hidden">
+            <div className="scale-[0.55] opacity-80 transition-opacity duration-500 group-hover:opacity-95 sm:scale-[0.7]">
+              <DashboardMock className="pointer-events-none" />
+            </div>
+          </div>
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/20 to-transparent" />
       </div>
 
       <span className="absolute inset-0 flex items-center justify-center">
@@ -27,7 +40,7 @@ function VideoPoster({ video, featured }) {
       </span>
 
       <div className="absolute bottom-0 left-0 right-0 p-5">
-        <h3 className="font-display font-bold text-white text-sm sm:text-base">{video.title}</h3>
+        <h3 className="font-display text-sm font-bold text-white sm:text-base">{video.title}</h3>
         <p className="mt-1 text-xs text-slate-300 line-clamp-3">{video.description}</p>
       </div>
     </button>
