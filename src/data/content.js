@@ -11,6 +11,15 @@ import constructionImg from '../assets/images/construction.jpg';
 import apparelImg from '../assets/images/apparel.jpg';
 import hospitalImg from '../assets/images/hospital.jpg';
 
+import employeeManagementImg from '../assets/images/employee-management.jpg';
+import attendanceImg from '../assets/images/attendance.jpg';
+import leaveImg from '../assets/images/leave.jpg';
+import payrollImg from '../assets/images/payroll.jpg';
+import payslipImg from '../assets/images/payslip.png';
+import reportingImg from '../assets/images/reporting.jpg';
+import workforceVisibilityImg from '../assets/images/workforce visibility.jpg';
+import securityImg from '../assets/images/security.jpg';
+
 export const brand = {
   name: 'Global HRIS',
   company: 'Global Exceed Pvt Ltd',
@@ -71,14 +80,14 @@ export const productOverview = {
   title: 'Every HR operation, one connected ecosystem',
   body: "Global HRIS centralizes the workforce operations that usually live across five different tools — employee records, attendance, leave, payroll and reporting — into one secure, role-aware platform. Configure it once for your organization's structure, pay rules and compliance needs, then let it run.",
   pillars: [
-    { icon: 'Users', label: 'Employee Management', featureKey: 'workforce', image: officeImg },
-    { icon: 'Fingerprint', label: 'Attendance', featureKey: 'attendance', image: hospitalImg },
-    { icon: 'CalendarClock', label: 'Leave', featureKey: 'leave', image: teaImg },
-    { icon: 'Wallet', label: 'Payroll', featureKey: 'payroll', image: officeImg },
-    { icon: 'FileText', label: 'Payslips', featureKey: 'payslip', image: apparelImg },
-    { icon: 'BarChart3', label: 'Reporting', featureKey: 'reports', image: logisticsImg },
-    { icon: 'Eye', label: 'Workforce Visibility', featureKey: 'visibility', image: constructionImg },
-    { icon: 'Lock', label: 'Security', featureKey: 'security', image: hospitalImg },
+    { icon: 'Users', label: 'Employee Management', featureKey: 'workforce', image: employeeManagementImg },
+    { icon: 'Fingerprint', label: 'Attendance', featureKey: 'attendance', image: attendanceImg },
+    { icon: 'CalendarClock', label: 'Leave', featureKey: 'leave', image: leaveImg },
+    { icon: 'Wallet', label: 'Payroll', featureKey: 'payroll', image: payrollImg },
+    { icon: 'FileText', label: 'Payslips', featureKey: 'payslip', image: payslipImg },
+    { icon: 'BarChart3', label: 'Reporting', featureKey: 'reports', image: reportingImg },
+    { icon: 'Eye', label: 'Workforce Visibility', featureKey: 'visibility', image: workforceVisibilityImg },
+    { icon: 'Lock', label: 'Security', featureKey: 'security', image: securityImg },
   ],
 };
 
