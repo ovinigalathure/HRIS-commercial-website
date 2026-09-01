@@ -1,4 +1,4 @@
-import logoImg from '../assets/images/logo.jpg';
+import logoImg from '../assets/images/Logo.jpeg';
 
 /**
  * Site logomark. Uses the supplied Global Exceed brand logo image
