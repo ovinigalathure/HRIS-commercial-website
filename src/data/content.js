@@ -20,6 +20,11 @@ import reportingImg from '../assets/images/reporting.jpg';
 import workforceVisibilityImg from '../assets/images/workforce visibility.jpg';
 import securityImg from '../assets/images/security.jpg';
 
+import extremeSelfCustomizationImg from '../assets/images/Extreme Self-Customization.jpg';
+import zeroVariancePayrollImg from '../assets/images/Zero-Variance Statutory & Payroll Automation.jpg';
+import hardwareAgnosticImg from '../assets/images/Hardware-Agnostic Biometric & Kiosk Integration.jpg';
+import socialComplianceImg from '../assets/images/Social Compliance & Audit Readiness.jpg';
+
 export const brand = {
   name: 'Global HRIS',
   company: 'Global Exceed Pvt Ltd',
@@ -129,31 +134,31 @@ export const painPoints = [
 export const whyUs = [
   {
     icon: 'SlidersHorizontal',
-    image: officeImg,
+    image: extremeSelfCustomizationImg,
     title: 'Extreme Self-Customization',
     body: 'Stop adapting your business to your software. Global HRIS gives administrators total control over allowance rules, day-types (WRK, SAT, SUN, POY, STHL, CHL), late penalty thresholds, dynamic approval workflows, and master data configurations without hiring developers.',
   },
   {
     icon: 'Eye',
-    image: logisticsImg,
+    image: workforceVisibilityImg,
     title: 'Complete Workforce Visibility\u200B (From Desk to Floor)',
     body: 'Whether you manage white-collar executives in corporate suites, factory operators on production lines, or remote global contractors, Global HRIS unifies your entire workforce under one dashboard with real-time presence monitoring and live punch sync.',
   },
   {
     icon: 'Calculator',
-    image: teaImg,
+    image: zeroVariancePayrollImg,
     title: 'Zero-Variance Statutory & Payroll Automation',
     body: 'Run multi-currency or localized payrolls in minutes with absolute mathematical accuracy. Automate complex additions, deductions, coin brought-forward cash rounding, stamp duties, and direct bank/ERP journal exports.',
   },
   {
     icon: 'Network',
-    image: constructionImg,
+    image: hardwareAgnosticImg,
     title: 'Hardware-Agnostic Biometric & Kiosk Integration',
     body: 'Connect any hardware device seamlessly. Direct API/TCP-IP synchronization supports Hikvision, ZKTeco, and Dahua biometric terminals, ruggedized floor kiosks, mobile camera barcode scanners, and tablet access.',
   },
   {
     icon: 'ScrollText',
-    image: apparelImg,
+    image: socialComplianceImg,
     title: 'Social Compliance & Audit Readiness',
     body: 'Built for enterprises facing strict international buyer standards (WRAP, Sedex, BSCI, ISO). Every attendance edit, approval override, and payroll modification is logged with an immutable audit trail showing "Before vs. After" values, user IDs, and timestamps.',
   },
