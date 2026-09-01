@@ -9,7 +9,7 @@ export default function StatsSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-2xl mx-auto text-center">
           <span className="eyebrow justify-center">Impact</span>
-          <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold text-navy-900 dark:text-white">Facts, figures & ROI</h2>
+          <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold"><span className="text-gradient-topic">Facts, figures &amp; ROI</span></h2>
         </Reveal>
 
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-5 gap-5">

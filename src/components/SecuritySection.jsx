@@ -21,7 +21,7 @@ export default function SecuritySection() {
           <span className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-semibold tracking-wide uppercase text-cyan-600 dark:text-cyan-300 border-white/70 dark:border-white/10">
             <ShieldCheck className="h-3.5 w-3.5" /> Security & Compliance
           </span>
-          <h2 className="mt-5 font-display text-3xl sm:text-4xl font-bold text-navy-900 dark:text-white">Enterprise-grade control and confidence</h2>
+          <h2 className="mt-5 font-display text-3xl sm:text-4xl font-bold"><span className="text-gradient-topic">Enterprise-grade control and confidence</span></h2>
           <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-400">
             Every layer of Global HRIS is built to protect sensitive workforce data — from authentication to the audit trail.
           </p>

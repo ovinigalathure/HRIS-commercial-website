@@ -158,8 +158,8 @@ export default function ComparisonSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow justify-center">Competitive Edge</span>
-          <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold text-navy-900 dark:text-white">
-            How Global HRIS compares
+          <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold">
+            <span className="text-gradient-topic">How Global HRIS compares</span>
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-400">
             Against legacy local systems (hSenid / Microimage) and rigid global SaaS platforms

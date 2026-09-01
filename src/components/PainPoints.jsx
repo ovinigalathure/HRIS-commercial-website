@@ -95,8 +95,8 @@ export default function PainPoints() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-2xl mx-auto text-center">
           <span className="eyebrow justify-center">The Problem</span>
-          <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold text-navy-900 dark:text-white">
-            The real-world pain points we eliminate
+          <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold">
+            <span className="text-gradient-topic">The real-world pain points we eliminate</span>
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-400">
             Legacy local software and rigid global platforms both fail at the same thing — your reality.

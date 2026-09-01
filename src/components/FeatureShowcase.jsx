@@ -13,8 +13,8 @@ export default function FeatureShowcase() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-2xl mx-auto text-center">
           <span className="eyebrow justify-center">Complete Feature Set</span>
-          <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold text-navy-900 dark:text-white">
-            Every module your workforce needs
+          <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold">
+            <span className="text-gradient-topic">Every module your workforce needs</span>
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-400">
             From employee onboarding to statutory payroll — explore what's inside each part of the platform.

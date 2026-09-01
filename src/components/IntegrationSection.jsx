@@ -44,7 +44,7 @@ export default function IntegrationSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow justify-center">Hardware & Integration</span>
-          <h2 className="mt-4 font-display text-3xl font-bold text-navy-900 dark:text-white sm:text-4xl">Connect your existing workforce infrastructure</h2>
+          <h2 className="mt-4 font-display text-3xl font-bold sm:text-4xl"><span className="text-gradient-topic">Connect your existing workforce infrastructure</span></h2>
           <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-400">From biometric terminals to ERP systems — Global HRIS is hardware-agnostic and API-first.</p>
         </Reveal>
 

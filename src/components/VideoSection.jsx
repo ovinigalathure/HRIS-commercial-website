@@ -42,7 +42,7 @@ export default function VideoSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-2xl mx-auto text-center">
           <span className="eyebrow justify-center">Watch the Product Demo</span>
-          <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold text-navy-900 dark:text-white">See Global HRIS in action</h2>
+          <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold"><span className="text-gradient-topic">See Global HRIS in action</span></h2>
           <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-400 inline-flex items-center gap-2">
             <Clock className="h-4 w-4" /> Full walkthrough videos are being finalised — check back soon, or book a live demo below.
           </p>

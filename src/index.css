@@ -108,6 +108,9 @@ h1, h2, h3, h4, .font-display {
 @utility text-gradient {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-royal-600 via-electric-500 to-cyan-400;
 }
+@utility text-gradient-topic {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-navy-900 via-electric-500 to-cyan-400 dark:text-white;
+}
 @utility text-gradient-orange {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-500 to-accent-300;
 }
