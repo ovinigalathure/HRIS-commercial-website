@@ -71,9 +71,9 @@ export default function FeatureDetailPopup() {
             type="button"
             onClick={closeFeatureDetail}
             aria-label="Close"
-            className="absolute right-4 top-4 z-10 inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/20 text-white hover:bg-black/30 backdrop-blur-sm transition-colors"
+            className="absolute right-4 top-4 z-20 inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/20 text-white hover:bg-black/30 backdrop-blur-sm transition-colors"
           >
-            <X className="h-4.5 w-4.5" />
+            <X className="h-4 w-4" />
           </button>
 
           <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-6">
