@@ -1,4 +1,4 @@
-import { Bell, CalendarCheck2, CheckCircle2, Fingerprint, TrendingUp, Users, Wallet } from 'lucide-react';
+import { Bell, CalendarCheck2, Fingerprint, TrendingUp, Users, Wallet } from 'lucide-react';
 
 /**
  * A hand-built, realistic dashboard composition — used since no real
@@ -49,7 +49,7 @@ export default function DashboardMock({ className = '', image }) {
               </div>
 
             {/* Floating metric chips */}
-            <div className="float-slow absolute -left-8 -top-8 hidden md:flex items-center gap-2.5 rounded-2xl bg-white/90 dark:bg-navy-900/90 px-4 py-3 shadow-xl ring-1 ring-slate-900/5 dark:ring-white/10 backdrop-blur" style={{ '--rot': '-5deg' }}>
+            <div className="float-slow absolute -left-10 top-1/2 hidden md:flex items-center gap-2.5 rounded-2xl bg-white/90 dark:bg-navy-900/90 px-4 py-3 shadow-xl ring-1 ring-slate-900/5 dark:ring-white/10 backdrop-blur" style={{ '--rot': '-5deg' }}>
               <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-electric-500 to-cyan-400 text-white">
                 <Users className="h-4 w-4" />
               </span>
@@ -69,15 +69,6 @@ export default function DashboardMock({ className = '', image }) {
               </div>
             </div>
 
-            <div className="float-slow-delay2 absolute -bottom-8 -left-6 hidden md:flex items-center gap-2.5 rounded-2xl bg-white/90 dark:bg-navy-900/90 px-4 py-3 shadow-xl ring-1 ring-slate-900/5 dark:ring-white/10 backdrop-blur" style={{ '--rot': '-3deg' }}>
-              <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-cyan-400 to-emerald-400 text-white">
-                <CheckCircle2 className="h-4 w-4" />
-              </span>
-              <div className="text-left">
-                <p className="font-display text-base font-bold leading-none text-navy-900 dark:text-white">100%</p>
-                <p className="text-[10px] text-slate-500 dark:text-slate-400">EPF/ETF accuracy</p>
-              </div>
-            </div>
           </div>
         ) : (
           <div className="p-5 sm:p-6">
